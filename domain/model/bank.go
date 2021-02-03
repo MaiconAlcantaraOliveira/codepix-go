@@ -33,7 +33,7 @@ func NewBank(code string, name string) (*Bank, error) {
 		Name: name,
 	}
 
-	bank.ID = uuid.NewV4().string()
+	bank.ID = uuid.NewV4().String()
 	bank.CreatedAt = time.Now()
 
 	err := bank.isValid()
