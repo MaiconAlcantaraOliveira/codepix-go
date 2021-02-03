@@ -1,4 +1,4 @@
-module github.com/MaiconAlcantaraOliveira/codepix-go
+module "github.com/MaiconAlcantaraOliveira/codepix-go
 
 go 1.15
 

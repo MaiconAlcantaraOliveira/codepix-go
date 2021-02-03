@@ -5,7 +5,7 @@ import (
 
 	uuid "github.com/satori/go.uuid"
 
-	"github.com/codeedu/imersao/codepix-go/domain/model"
+	"github.com/MaiconAlcantaraOliveira/codepix-go/domain/model"
 	"github.com/stretchr/testify/require"
 )
 
@@ -75,6 +75,5 @@ func TestModel_ChangeStatusOfATransaction(t *testing.T) {
 	transaction.Cancel("Error")
 	require.Equal(t, transaction.Status, model.TransactionError)
 	require.Equal(t, transaction.CancelDescription, "Error")
-
 
 }
